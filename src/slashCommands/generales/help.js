@@ -7,7 +7,7 @@ module.exports = {
         .setDescription("Muestra todos los comandos disponibles del bot"),
     
     run: async (client, interaction) => {
-        // Obtener todos los comandos del bot
+       
         const commands = client.slashCommands;
         
         const helpEmbed = new EmbedBuilder()
@@ -21,11 +21,10 @@ module.exports = {
             })
             .setTimestamp();
 
-        // Agrupar comandos por categorías
         const categories = {};
         
         commands.forEach((command, name) => {
-            // Usar una categoría fija para evitar problemas con rutas
+          
             const category = 'Generales';
             
             if (!categories[category]) {
@@ -38,7 +37,7 @@ module.exports = {
             });
         });
 
-        // Agregar campos al embed por categoría
+      
         Object.entries(categories).forEach(([category, categoryCommands]) => {
             const commandList = categoryCommands.map(cmd => 
                 `\`/${cmd.name}\` - ${cmd.description}`
@@ -51,7 +50,7 @@ module.exports = {
             });
         });
 
-        // Información adicional
+      
         helpEmbed.addFields(
             { 
                 name: '🔧 Información del Bot', 
