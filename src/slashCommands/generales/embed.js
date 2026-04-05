@@ -5,7 +5,7 @@ module.exports = {
         .setName("embed")
         .setDescription("Crea un embed personalizado")
 
-        // OBLIGATORIOS
+     
         .addStringOption(option =>
             option.setName("titulo")
                 .setDescription("Título del embed")
@@ -17,7 +17,6 @@ module.exports = {
                 .setRequired(true)
         )
 
-        // OPCIONALES
         .addStringOption(option =>
             option.setName("thumbnail")
                 .setDescription("URL del thumbnail")
@@ -68,7 +67,7 @@ module.exports = {
             .setDescription(texto)
             .setColor(colores[colorSeleccionado] || "#FFD700");
 
-        // Thumbnail opcional
+      
         if (thumbnailUrl) {
             if (!thumbnailUrl.startsWith("http")) {
                 return interaction.reply({
@@ -79,7 +78,7 @@ module.exports = {
             embed.setThumbnail(thumbnailUrl);
         }
 
-        // Imagen opcional
+     
         if (imageUrl) {
             if (!imageUrl.startsWith("http")) {
                 return interaction.reply({
@@ -90,7 +89,7 @@ module.exports = {
             embed.setImage(imageUrl);
         }
 
-        // Footer opcional
+      
         if (footerText) {
             embed.setFooter({ text: footerText });
         }
