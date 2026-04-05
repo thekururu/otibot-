@@ -6,7 +6,7 @@ module.exports = {
         .setDescription("Obtén el enlace de invitación del bot"),
     
     run: async (client, interaction) => {
-        const inviteLink = "https://discord.com/oauth2/authorize?client_id=1398747352264609822&permissions=8&integration_type=0&scope=bot+applications.commands";
+        const inviteLink = "";
         
         const inviteEmbed = new EmbedBuilder()
             .setTitle('🤖 Invitar Bot')
