@@ -8,10 +8,9 @@ module.exports = {
         .setDescription("Te cuenta un chiste aleatorio"),
     run: async (client, interaction) => {
         try {
-            // Ruta al archivo chistes.txt
+         
             const filePath = path.join(__dirname, "../../data/chistes.txt");
-            
-            // Leer todos los chistes
+ 
             const contenido = fs.readFileSync(filePath, "utf-8");
             const chistes = contenido.split("\n").filter(line => line.trim() !== "");
             
@@ -19,7 +18,6 @@ module.exports = {
                 return interaction.reply("😅 No hay chistes disponibles ahora.");
             }
 
-            // Elegir uno al azar
             const chiste = chistes[Math.floor(Math.random() * chistes.length)];
             await interaction.reply(`😂 ${chiste}`);
         } catch (err) {
