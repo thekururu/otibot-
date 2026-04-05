@@ -85,7 +85,7 @@ Aquí puedes guardar datos como:
 
 ---
 
-1. Sistema de moderación
+### 1. Sistema de moderación
 
 > 📂 Archivos:
 ```
@@ -109,7 +109,7 @@ Guardar usuarios sancionados
 Llevar registro de warns
 Evitar perder datos al reiniciar el bot
 
-2. ⚠️ Debes cambiar la URL por la de tu propia web:
+### 2. ⚠️ Debes cambiar la URL por la de tu propia web:
 ```
 .../generales/4.js
 ```
@@ -118,7 +118,7 @@ Evitar perder datos al reiniciar el bot
 const url = "TU_WEB_AQUI";
 ```
 
-3. Link de invitacion
+### 3. Link de invitacion
 ```
 
 ..../generales/invite.js
@@ -131,7 +131,7 @@ const url = "TU_WEB_AQUI";
 const invite = "TU_LINK_DE_INVITACION";
 ```
 
-4. sistema de busqueda por IA 
+### 4. sistema de busqueda por IA 
 ```
 .../generales/search.js
 ```
@@ -153,7 +153,7 @@ const config = {
 en el caso de Oti se usa una IA entranada por nosotros mismo utilizando Chat GPT como motor de busqueda y personalidad y funciones de Cloude Code 
 
 
-[![ᖴᎥᖇᗴᔕ丅ᑌᗝᔕ](https://img.shields.io/badge/FireStudios-Official-red?style=for-the-badge&logo=google-firestore&logoColor=white)]()
+### [![ᖴᎥᖇᗴᔕ丅ᑌᗝᔕ](https://img.shields.io/badge/FireStudios-Official-red?style=for-the-badge&logo=google-firestore&logoColor=white)]()
 
 ---
 
