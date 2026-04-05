@@ -1,6 +1,6 @@
 
 const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('discord.js');
-const Database = require('@replit/database');
+const Database = require(''); //remplazr por data base
 const db = new Database();
 
 module.exports = {
@@ -18,7 +18,7 @@ module.exports = {
         const targetUser = interaction.options.getUser('usuario');
         const guild = interaction.guild;
         
-        // Obtener advertencias del usuario
+        
         const warnsKey = `warns_${guild.id}_${targetUser.id}`;
         const warns = await db.get(warnsKey) || [];
         
