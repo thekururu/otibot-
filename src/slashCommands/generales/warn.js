@@ -25,7 +25,7 @@ module.exports = {
         const moderator = interaction.user;
         const guild = interaction.guild;
         
-        // Verificar que el usuario no sea el mismo moderador
+       
         if (targetUser.id === moderator.id) {
             return interaction.reply({
                 content: '❌ No puedes advertirte a ti mismo.',
@@ -33,7 +33,7 @@ module.exports = {
             });
         }
         
-        // Verificar que el usuario esté en el servidor
+  
         const member = await guild.members.fetch(targetUser.id).catch(() => null);
         if (!member) {
             return interaction.reply({
@@ -42,11 +42,11 @@ module.exports = {
             });
         }
         
-        // Obtener advertencias actuales del usuario
+       
         const warnsKey = `warns_${guild.id}_${targetUser.id}`;
         let warns = await db.get(warnsKey) || [];
         
-        // Agregar nueva advertencia
+
         const newWarn = {
             id: warns.length + 1,
             reason: reason,
@@ -59,7 +59,7 @@ module.exports = {
         warns.push(newWarn);
         await db.set(warnsKey, warns);
         
-        // Crear embed para el mensaje privado al usuario
+    
         const dmEmbed = new EmbedBuilder()
             .setTitle('⚠️ Has recibido una advertencia')
             .setDescription(`Has recibido una advertencia en **${guild.name}**`)
@@ -75,15 +75,14 @@ module.exports = {
                 iconURL: guild.iconURL() 
             })
             .setTimestamp();
-        
-        // Enviar mensaje privado al usuario
+    
         try {
             await targetUser.send({ embeds: [dmEmbed] });
         } catch (error) {
             console.log(`No se pudo enviar DM a ${targetUser.tag}`);
         }
         
-        // Crear embed para la confirmación en el servidor
+      
         const confirmEmbed = new EmbedBuilder()
             .setTitle('✅ Advertencia aplicada')
             .setDescription(`Se ha advertido exitosamente a **${targetUser.tag}**`)
