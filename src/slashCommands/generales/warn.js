@@ -1,6 +1,6 @@
 
 const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('discord.js');
-const Database = require('@replit/database');
+const Database = require(''); //replazar por data base
 const db = new Database();
 
 module.exports = {
