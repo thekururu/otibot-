@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('discord.js');
-const Database = require('@replit/database');
+const Database = require(''); //cambiar por alguna data base 
 const db = new Database();
 
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
         const moderator = interaction.user;
         const guild = interaction.guild;
 
-        // Obtener advertencias actuales del usuario
+
         const warnsKey = `warns_${guild.id}_${targetUser.id}`;
         let warns = await db.get(warnsKey) || [];
 
@@ -35,7 +35,7 @@ module.exports = {
             });
         }
 
-        // Buscar la advertencia por ID
+
         const warnIndex = warns.findIndex(warn => warn.id === warnId);
 
         if (warnIndex === -1) {
@@ -45,14 +45,14 @@ module.exports = {
             });
         }
 
-        // Guardar la advertencia que se va a quitar para mostrarla
+
         const removedWarn = warns[warnIndex];
 
-        // Quitar la advertencia
+        
         warns.splice(warnIndex, 1);
         await db.set(warnsKey, warns);
 
-        // Crear embed de confirmación
+
         const unwarnEmbed = new EmbedBuilder()
             .setTitle('✅ Advertencia removida')
             .setDescription(`Se ha removido exitosamente la advertencia de **${targetUser.tag}**`)
