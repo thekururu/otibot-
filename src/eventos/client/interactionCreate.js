@@ -5,9 +5,7 @@ module.exports = {
   emiter: "on",
   run: async (client, interaction) => {
 
-    // ======================
-    // 📌 COMANDOS SLASH
-    // ======================
+ 
     if (interaction.isChatInputCommand()) {
       const command = client.slashCommands.get(interaction.commandName);
       if (!command) return;
@@ -27,12 +25,8 @@ module.exports = {
       }
     }
 
-    // ======================
-    // 📌 BOTONES
-    // ======================
     if (interaction.isButton()) {
 
-      // 🎫 CREAR TICKET
       if (interaction.customId === "create_ticket") {
         try {
           await interaction.deferReply({ ephemeral: true });
@@ -106,7 +100,6 @@ module.exports = {
         }
       }
 
-      // 🔒 CERRAR TICKET
       if (interaction.customId === "close_ticket") {
         try {
           await interaction.reply("🔒 Cerrando ticket en 5 segundos...");
