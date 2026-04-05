@@ -1,0 +1,93 @@
+mars|clima|Marte es muy frío, con temperaturas promedio de -60°C.
+mars|clima|Puede haber tormentas de polvo que cubren todo el planeta.
+mars|composicion|Su superficie tiene óxido de hierro, por eso es roja.
+mars|composicion|Tiene una delgada atmósfera compuesta principalmente de CO2.
+mars|gravedad|La gravedad de Marte es 0.38 g, mucho menor que la de la Tierra.
+mars|curiosidades|Marte tiene la montaña más alta del sistema solar: Olympus Mons.
+mars|curiosidades|Posee el cañón más grande del sistema solar: Valles Marineris.
+jupiter|clima|Júpiter tiene enormes tormentas, incluida la Gran Mancha Roja.
+jupiter|clima|Sus vientos pueden alcanzar los 600 km/h.
+jupiter|composicion|Está compuesto principalmente de hidrógeno y helio.
+jupiter|composicion|No tiene superficie sólida.
+jupiter|gravedad|La gravedad en Júpiter es 2.5 veces la de la Tierra.
+jupiter|curiosidades|Es el planeta más grande del sistema solar.
+jupiter|curiosidades|Tiene más de 90 lunas conocidas.
+venus|clima|Venus es extremadamente caliente, con temperaturas de 462°C.
+venus|clima|Su atmósfera genera un efecto invernadero muy fuerte.
+venus|composicion|Atmósfera compuesta principalmente de dióxido de carbono.
+venus|composicion|Superficie rocosa con volcanes.
+venus|gravedad|Gravedad similar a la Tierra, 0.9 g.
+venus|curiosidades|Gira en sentido contrario a la mayoría de planetas.
+venus|curiosidades|Su día dura más que su año.
+moon|clima|La Luna tiene temperaturas extremas, desde -173°C hasta 127°C.
+moon|composicion|Roca y polvo, con regolito en la superficie.
+moon|gravedad|Gravedad 0.16 g.
+moon|curiosidades|La Luna se aleja de la Tierra 3.8 cm cada año.
+mars|clima|Marte es muy frío, con temperaturas promedio de -60°C.
+mars|clima|Puede haber tormentas de polvo que cubren todo el planeta.
+mars|composicion|Superficie rica en óxido de hierro, por eso es roja.
+mars|gravedad|La gravedad en Marte es 0.38 g, menor que la Tierra.
+mars|curiosidades|Marte tiene la montaña más alta del sistema solar: Olympus Mons.
+mars|curiosidades|Posee el cañón más grande: Valles Marineris.
+
+jupiter|clima|Júpiter tiene enormes tormentas, incluida la Gran Mancha Roja.
+jupiter|clima|Sus vientos pueden superar los 600 km/h.
+jupiter|composicion|Está compuesto principalmente de hidrógeno y helio.
+jupiter|gravedad|La gravedad en Júpiter es 2.5 veces la de la Tierra.
+jupiter|curiosidades|Es el planeta más grande del sistema solar.
+jupiter|curiosidades|Tiene más de 90 lunas conocidas.
+
+venus|clima|Venus es extremadamente caliente, hasta 462°C.
+venus|clima|Su atmósfera genera un efecto invernadero muy fuerte.
+venus|composicion|Atmósfera compuesta principalmente de dióxido de carbono.
+venus|gravedad|Gravedad similar a la Tierra, 0.9 g.
+venus|curiosidades|Gira en sentido contrario a la mayoría de planetas.
+venus|curiosidades|Su día dura más que su año.
+
+moon|clima|La Luna tiene temperaturas extremas, de -173°C a 127°C.
+moon|composicion|Roca y polvo, con regolito en la superficie.
+moon|gravedad|Gravedad 0.16 g.
+moon|curiosidades|Se aleja de la Tierra 3.8 cm cada año.
+moon|curiosidades|Tiene cráteres que duran millones de años.
+
+mercury|clima|Mercurio tiene temperaturas que oscilan entre -173°C y 427°C.
+mercury|composicion|Superficie rocosa y metálica.
+mercury|gravedad|Gravedad 0.38 g.
+mercury|curiosidades|No tiene atmósfera significativa.
+mercury|curiosidades|Su día dura 176 días terrestres.
+
+saturn|clima|Saturno tiene fuertes vientos y tormentas.
+saturn|composicion|Compuesto principalmente de hidrógeno y helio.
+saturn|gravedad|Gravedad 1.07 g.
+saturn|curiosidades|Posee los anillos más grandes y visibles.
+saturn|curiosidades|Tiene más de 80 lunas conocidas.
+
+uranus|clima|Urano es muy frío, con temperaturas de -224°C.
+uranus|composicion|Hidrógeno, helio y metano, que le da su color azul.
+uranus|gravedad|Gravedad 0.89 g.
+uranus|curiosidades|Gira de lado respecto a los otros planetas.
+uranus|curiosidades|Posee 27 lunas conocidas.
+
+neptune|clima|Neptuno tiene vientos más rápidos del sistema solar.
+neptune|composicion|Hidrógeno, helio y metano.
+neptune|gravedad|Gravedad 1.14 g.
+neptune|curiosidades|Posee el Gran Mancha Oscura, una tormenta gigante.
+neptune|curiosidades|Tiene 14 lunas conocidas.
+
+pluto|clima|Plutón es muy frío, alrededor de -229°C.
+pluto|composicion|Superficie de hielo y roca.
+pluto|gravedad|Gravedad 0.06 g.
+pluto|curiosidades|Considerado planeta enano.
+pluto|curiosidades|Tiene cinco lunas conocidas.
+
+ceres|clima|Ceres es muy frío, con temperaturas alrededor de -105°C.
+ceres|composicion|Superficie rocosa con hielo.
+ceres|gravedad|Gravedad 0.03 g.
+ceres|curiosidades|Es el objeto más grande del cinturón de asteroides.
+ceres|curiosidades|Podría tener agua subterránea.
+
+io|clima|Io tiene volcanes activos constantemente.
+io|composicion|Superficie rocosa con azufre.
+io|gravedad|Gravedad 0.18 g.
+io|curiosidades|Es la luna más volcánica del sistema solar.
+io|curiosidades|Su órbita genera fuertes mareas en Júpiter.
