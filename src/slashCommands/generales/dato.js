@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const fs = require("fs");
 const path = require("path");
 
-// Ruta correcta a datos.txt desde src/slashCommands/generales/datos.js
+
 const filePath = path.join(__dirname, "../../data/datos.txt");
 
 const datos = {};
@@ -34,7 +34,7 @@ try {
     process.exit(1);
 }
 
-// Lista de cuerpos celestes
+
 const cuerpos = [
     { name: "Marte", value: "mars" },
     { name: "Júpiter", value: "jupiter" },
@@ -54,7 +54,7 @@ const cuerpos = [
     { name: "Calisto", value: "callisto" }
 ];
 
-// Lista de temas
+
 const temas = [
     { name: "Clima", value: "clima" },
     { name: "Composición", value: "composicion" },
@@ -63,7 +63,7 @@ const temas = [
     { name: "Historia / Exploración", value: "historia" }
 ];
 
-// Comando /datoespacial
+
 const command = {
     data: new SlashCommandBuilder()
         .setName("datoespacial")
@@ -96,7 +96,7 @@ const command = {
             .setTitle(`🌌 ${cuerpo.toUpperCase()} - ${tema.charAt(0).toUpperCase() + tema.slice(1)}`)
             .setDescription(datoRandom)
             .setColor("#ffffff")
-            .setFooter({ text: "ØTI DATABASE" });
+            .setFooter({ text: "bot DATABASE" });
 
         await interaction.reply({ embeds: [embed] });
     }
