@@ -39,8 +39,7 @@ module.exports = {
                 iconURL: guild.iconURL() 
             })
             .setTimestamp();
-        
-        // Mostrar las últimas 10 advertencias
+         
         const recentWarns = warns.slice(-10);
         
         recentWarns.forEach(warn => {
