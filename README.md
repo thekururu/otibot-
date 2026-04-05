@@ -1,8 +1,3 @@
-![Discord](https://img.shields.io/badge/Discord-Bot-blue?style=for-the-badge&logo=discord)
-[![Web](https://img.shields.io/badge/Web-OTI-blue?style=for-the-badge&logo=google-chrome)](https://thekururu.github.io/NKaka)
-
----
-
 ## 📌 Español / Spanish
 
 ### 📖 Info breve
@@ -157,3 +152,21 @@ const config = {
 ``` 
 en el caso de Oti se usa una IA entranada por nosotros mismo utilizando Chat GPT como motor de busqueda y personalidad y funciones de Cloude Code 
 
+
+[![ᖴᎥᖇᗴᔕ丅ᑌᗝᔕ](https://img.shields.io/badge/FireStudios-Official-red?style=for-the-badge&logo=google-firestore&logoColor=white)]()
+
+---
+
+### 🚀 Links
+
+[![Discord](https://img.shields.io/badge/Discord-Bot-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/9zuHdxUKdY)
+[![Web](https://img.shields.io/badge/Web-NKaka-red?style=for-the-badge&logo=google-chrome&logoColor=white)](https://thekururu.github.io/OtiWeb)
+[![Bot](https://img.shields.io/badge/Bot-Invite-red?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/oauth2/authorize?client_id=1398747352264609822&permissions=8&integration_type=0&scope=bot+applications.commands)
+
+---
+
+### 💬 Mensaje final
+
+> 🔥 *Código con fuego, proyectos con pasión.*
+
+---
