@@ -4,7 +4,7 @@ const {
     GatewayIntentBits,
 } = require("discord.js");
 const { readdirSync } = require("node:fs");
-const express = require("express"); // ✅ Import Express
+const express = require("express");
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -17,11 +17,10 @@ const config = require(`${process.cwd()}/src/json/client/bot.json`);
 
 module.exports = client;
 
-// Collections
 client.slashCommands = new Collection();
 client.slashArray = [];
 
-/* Handlers */
+
 for (const folder of readdirSync(`${process.cwd()}/src/handlers`)) {
     const files = readdirSync(`${process.cwd()}/src/handlers/${folder}`).filter(
         (file) => file.endsWith(".js")
@@ -32,39 +31,32 @@ for (const folder of readdirSync(`${process.cwd()}/src/handlers`)) {
     }
 }
 
-/* -------------------- */
-/* Servidor web simple  */
-/* -------------------- */
 const app = express();
 
-// Endpoint raíz para recibir pings
+
 app.get("/", (req, res) => {
-    res.send("Bot activo 👍"); // mensaje simple
+    res.send("Bot activo 👍"); 
 });
 
-// Escucha en el puerto que Replit asigna
+
 app.listen(process.env.PORT || 3000, () => {
     console.log("🌐 Servidor web activo para mantener bot 24/7");
 });
 
-/* -------------------- */
-/* Inicio del bot       */
-/* -------------------- */
+
 client.eventos();
-// client.mongoose()
+
 
 client.login(config.BOT_TOKEN).then(() => {
     client.builder();
     console.log("🤖 Bot conectado y listo!");
 });
 
-/* Opcional: log para saber que sigue vivo cada minuto */
+
 setInterval(() => {
     console.log("🟢 Bot sigue activo...");
-}, 60000);
-/* -------------------- */
-/* Comandos desde shell */
-/* -------------------- */
+}, 100000);
+
 
 process.stdin.on("data", async (data) => {
     const input = data.toString().trim();
