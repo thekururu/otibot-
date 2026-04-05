@@ -16,7 +16,7 @@ module.exports = {
         await interaction.reply({
             content: 'Haz clic en el botón para abrir el **Developer Portal de Discord**:',
             components: [row],
-            ephemeral: true // Opcional: sólo visible para quien lo ejecuta
+            ephemeral: true 
         });
     }
 };
