@@ -17,7 +17,7 @@ module.exports = {
 
     run: async (client, interaction) => {
         if (interaction.options.getSubcommand() === 'setup') {
-            // Verificar permisos de administrador
+            
             if (!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) {
                 return interaction.reply({ 
                     content: '❌ Necesitas permisos de administrador para usar este comando.', 
@@ -27,7 +27,7 @@ module.exports = {
 
             const channel = interaction.options.getChannel('canal');
 
-            // Crear embed del panel de tickets
+
             const ticketEmbed = new EmbedBuilder()
                 .setTitle('🎫 Sistema de Tickets')
                 .setDescription('¿Necesitas ayuda o tienes alguna consulta?\n\n' +
@@ -47,7 +47,7 @@ module.exports = {
                 })
                 .setTimestamp();
 
-            // Crear botón para crear ticket
+          
             const ticketButton = new ActionRowBuilder()
                 .addComponents(
                     new ButtonBuilder()
